@@ -137,7 +137,7 @@ def save_jsonl(file_path: Path, records: list[dict]) -> None:
     file_path.parent.mkdir(parents=True, exist_ok=True)
     with file_path.open("w", encoding="utf-8") as f:
         for record in records:
-            f.write(json.dumps(record, ensure_ascii=False) + "\\n")
+            f.write(json.dumps(record, ensure_ascii=False) + "\n")
 
 
 def main() -> None:
